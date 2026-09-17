@@ -1,0 +1,84 @@
+{\rtf1\fbidis\ansi\ansicpg1256\deff0\nouicompat\deflang1025{\fonttbl{\f0\fnil\fcharset0 Aptos Display;}{\f1\fnil\fcharset178 Calibri;}{\f2\fnil\fcharset0 Times New Roman;}{\f3\fnil\fcharset178 Times New Roman;}{\f4\fnil\fcharset0 Calibri;}{\f5\fnil\fcharset0 Aptos;}{\f6\fnil Segoe UI Symbol;}{\f7\fnil Calibri;}{\f8\fnil\fcharset0 Consolas;}{\f9\fnil Aptos;}{\f10\fnil Arial;}{\f11\fnil\fcharset2 Symbol;}}
+{\colortbl ;\red15\green71\blue97;\red0\green64\blue128;\red79\green129\blue189;\red0\green0\blue255;}
+{\*\generator Riched20 10.0.19041}\viewkind4\uc1 
+\pard\rtlpar\fi1080\ri1800\sa129\sl276\slmult1\qr\cf1\f0\fs56\lang9 Car Troubleshooting Expert System\cf0\f1\rtlch\fs22\lang1025\par
+\par
+\par
+\cf2\b\f2\ltrch\fs42\lang9 SUPERVISED\lang1033 :\cf0\b0\f1\rtlch\fs22\lang1025\par
+
+\pard\ltrpar\li-360\sa200\sl276\slmult1\qc\b\i\f2\ltrch\fs40\lang9 Dr\f3\rtlch\lang1025 . \f2\ltrch\lang1033 Ahamed Al-Arshi \b0\i0\f4\fs22\par
+
+\pard\ltrpar\li-360\sa200\sl276\slmult1\lang9   \par
+
+\pard\ltrpar\fi1080\li1800\sa200\sl276\slmult1\cf2\b\i\f2\fs52 Done by:\cf0\b0\i0\f4\fs22\par
+
+\pard\ltrpar\fi720\li-360\sa200\sl276\slmult1\qc\b\i\f2\fs30 ENG. Hassan Moqbel Morshed Ghaleb\par
+ID:202274198\par
+
+\pard\ltrpar\keep\keepn\sb360\sa80\qc\cf1\b0\i0\f0\fs40\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+\par
+
+\pard\ltrpar\keep\keepn\sb360\sa80 Car Troubleshooting Expert System\par
+
+\pard\ltrpar\sb180\sa180\cf0\b\f5\fs24 Description:\b0  This is a simple Python program that acts as an interactive car\f6\_\f5 troubleshooting expert system. It encodes expert knowledge as a set of \b if-then\b0  rules. The program asks you a series of yes/no questions about your car\f7\rquote\f5 s symptoms and then prints out a diagnosis or advice.\par
+
+\pard\ltrpar\keep\keepn\sb160\sa80\cf1\f0\fs32 Running the Program\par
+
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\ltrpar\fi-360\li720\sb36\sa36\cf0\b\f5\fs24 Python version:\b0  You need Python\~3 installed (e.g. Python\~3.7 or later). (The Python 2 interpreter is outdated.) On most systems you can run the script with the \f8\fs22 python3\f5\fs24  command{\cf3{\field{\*\fldinst{HYPERLINK "https://docs.python.org/3/tutorial/interpreter.html#:~:text=The%20interpreter%20operates%20somewhat%20like,a%20script%20from%20that%20file"}}{\fldrslt{\ul\cf4\cf4\ul [2]}}}}\f5\fs24 .\par
+{\pntext\f11\'B7\tab}\b Save the script:\b0  Save the provided Python code to a file (for example, \f8\fs22 car_troubleshooter.py\f5\fs24 ).\par
+{\pntext\f11\'B7\tab}\b Run it:\b0  Open a terminal (or command prompt) and navigate to the folder containing the script. Then execute:\par
+
+\pard\ltrpar\sa200\f8\fs22 python3 car_troubleshooter.py\par
+
+\pard\ltrpar\sb180\sa180\f5\fs24 (On some systems you may use \f8\fs22 python\f5\fs24  instead of \f8\fs22 python3\f5\fs24 .) The Python interpreter will read and execute the script file{\cf3{\field{\*\fldinst{HYPERLINK "https://docs.python.org/3/tutorial/interpreter.html#:~:text=The%20interpreter%20operates%20somewhat%20like,a%20script%20from%20that%20file"}}{\fldrslt{\ul\cf4\cf4\ul [2]}}}}\f5\fs24 . Make sure you have execute permissions or the correct file extension.\par
+No special libraries are required (it uses only standard Python). The program runs entirely in the console.\par
+
+\pard\ltrpar\keep\keepn\sb160\sa80\cf1\f0\fs32 Input and Output (User Interaction)\par
+
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\ltrpar\fi-360\li720\sb36\sa36\cf0\b\f5\fs24 Questions:\b0  When you run the program, it will prompt you with questions about your car\f9\rquote\f5 s symptoms, one at a time. Each question is answered by typing \b\f8\fs22 yes\b0\f5\fs24  or \b\f8\fs22 no\b0\f5\fs24  (or simply \f8\fs22 y\f5\fs24 /\f8\fs22 n\f5\fs24 ) and pressing Enter.\par
+{\pntext\f11\'B7\tab}\b Collecting answers:\b0  Each \f9\ldblquote\f5 yes\f9\rdblquote\f5 /\f9\ldblquote\f5 no\f9\rdblquote  \f5 answer is recorded as a fact for the system. For example, the program might ask \i\f9\ldblquote\f5 Is the engine cranking when you turn the key?\f9\rdblquote\i0  \f5 and expect \f8\fs22 yes\f5\fs24  or \f8\fs22 no\f5\fs24 .\par
+{\pntext\f11\'B7\tab}\b Output:\b0  After all relevant questions have been asked (or once a rule fires), the system prints the diagnosis or advice. For example, it might output something like:\line\par
+
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\ltrpar\fi-360\li720\sa200\f8\fs22 Diagnosis: The battery may be dead.\line Recommendation: Try jump\f6\_\f8 starting the car or replacing the battery.\par
+
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\ltrpar\fi-360\li720\sb36\sa36\b\f5\fs24 User interface:\b0  The console interface is designed to be simple and user-friendly. As one overview notes, an expert system\f9\rquote\f5 s user interface \f9\ldblquote\f5 is designed to be intuitive and user-friendly,\f9\rdblquote  \f5 so that even non-experts can answer questions and receive advice{\cf3{\field{\*\fldinst{HYPERLINK "https://www.geeksforgeeks.org/artificial-intelligence/expert-systems/#:~:text=3,Between%20System%20and%20User"}}{\fldrslt{\ul\cf4\cf4\ul [3]}}}}\f5\fs24 . In our case, the interface is just text prompts and answers.\par
+
+\pard\ltrpar\keep\keepn\sb160\sa80\cf1\f0\fs32 Algorithm (How the Expert System Works)\par
+
+\pard\ltrpar\sb180\sa180\cf0\f5\fs24 The program implements a \b rule-based\b0  decision process. All the diagnostic knowledge is stored in the code as a set of rules (the \b knowledge base\b0 ) and the program logic acts as the \b inference engine\b0  that applies those rules{\cf3{\field{\*\fldinst{HYPERLINK "https://elshad-karimov.medium.com/building-a-simple-rule-based-expert-system-in-python-df606403472e#:~:text=An%20expert%20system%20emulates%20the,It%20has"}}{\fldrslt{\ul\cf4\cf4\ul [4]}}}}{\cf3\f5\fs24{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/2026071/neural-network-expert-system#:~:text=These%20are%20quite%20incompatible%20topics"}}{\fldrslt{\ul\cf4\cf4\ul [5]}}}}\cf0\ulnone\f5\fs24 . In general:\par
+
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\ltrpar\fi-360\li720\sb36\sa36\b Knowledge Base:\b0  The knowledge base contains \i facts and rules\i0  about car problems{\cf3{\field{\*\fldinst{HYPERLINK "https://elshad-karimov.medium.com/building-a-simple-rule-based-expert-system-in-python-df606403472e#:~:text=An%20expert%20system%20emulates%20the,It%20has"}}{\fldrslt{\ul\cf4\cf4\ul [4]}}}}\f5\fs24 . Each rule is an IF-THEN statement. For example:\par
+
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\ltrpar\fi-360\li720\sa200\i IF\i0  the car won\f9\rquote\f5 t start \b AND\b0  the headlights are dim, \i THEN\i0  suggest the battery may be dead.\line These rules are implemented in the Python code (for instance, as \f8\fs22 if\f5\fs24 /\f8\fs22 elif\f5\fs24  statements or entries in a list of rule objects).\par
+{\pntext\f11\'B7\tab}\b Inference Engine:\b0  The inference engine is the program logic that \b asks questions\b0  and \b matches rules{\cf3\b0{\field{\*\fldinst{HYPERLINK "https://elshad-karimov.medium.com/building-a-simple-rule-based-expert-system-in-python-df606403472e#:~:text=An%20expert%20system%20emulates%20the,It%20has"}}{\fldrslt{\ul\cf4\cf4\ul [4]}}}}{\cf3\b0\f5\fs24{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/2026071/neural-network-expert-system#:~:text=These%20are%20quite%20incompatible%20topics"}}{\fldrslt{\ul\cf4\cf4\ul [5]}}}}\cf0\ulnone\b\f5\fs24 . As you answer the yes/no questions, each response becomes a known fact. The engine then checks the rules against these facts. A simplified flow is:\par
+{\pntext\f11\'B7\tab}Ask and collect facts:\b0  The program asks a question, you answer yes/no, and it records that fact.\par
+
+\pard{\pntext\f11\'B7\tab}{\*\pn\pnlvlblt\pnf11\pnindent360{\pntxtb\'B7}}\ltrpar\fi-360\li720\sb36\sa36\b Match rules:\b0  For each rule, check if all of its conditions match the collected answers.\par
+{\pntext\f11\'B7\tab}\b Fire rule:\b0  If a rule\f9\rquote\f5 s conditions are all satisfied, that rule \f9\ldblquote\f5 fires\f9\rdblquote\f5 : the system uses the rule\f9\rquote\f5 s conclusion.\par
+{\pntext\f11\'B7\tab}\b Output:\b0  The system prints the rule\f9\rquote\f5 s conclusion as the diagnosis or advice. The process may then stop or continue checking other rules.\par
+
+\pard\ltrpar\sb180\sa180 This loop of gathering facts and firing matching rules is a standard expert-system cycle (often called \i forward chaining\i0 ){\cf3{\field{\*\fldinst{HYPERLINK "https://www.academia.edu/82497603/Laserjet_Printer_Troubleshooting_Expert_System#:~:text=the%20next%20facts%20and%20update,African%20Journal%20of%20Industrial"}}{\fldrslt{\ul\cf4\cf4\ul [6]}}}}{\cf3\f5\fs24{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/2026071/neural-network-expert-system#:~:text=These%20are%20quite%20incompatible%20topics"}}{\fldrslt{\ul\cf4\cf4\ul [5]}}}}\cf0\ulnone\f5\fs24 . In effect, the program iterates through the rules (\f7\ldblquote\f5 left-hand side\f7\rdblquote  \f5 conditions) and when a match is found, executes the rule\f7\rquote\f5 s action (the \f7\ldblquote\f5 right-hand side\f7\rdblquote\f5 ){\cf3{\field{\*\fldinst{HYPERLINK "https://www.academia.edu/82497603/Laserjet_Printer_Troubleshooting_Expert_System#:~:text=the%20next%20facts%20and%20update,African%20Journal%20of%20Industrial"}}{\fldrslt{\ul\cf4\cf4\ul [6]}}}}\f5\fs24 .\par
+In summary, the logic is purely symbolic: no probabilistic or machine-learning methods are used. It simply uses hard-coded if-then rules. As one source explains, an expert system is based on \f7\ldblquote\f5 a set of rules and an inferential engine,\f7\rdblquote  \f5 where the rules are exactly IF-THEN statements{\cf3{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/2026071/neural-network-expert-system#:~:text=These%20are%20quite%20incompatible%20topics"}}{\fldrslt{\ul\cf4\cf4\ul [5]}}}}\f5\fs24 . The inference engine in our Python code applies these rules to your answers and produces the final advice.\par
+\b References:\b0  The above design follows the classic expert-system model{\cf3{\field{\*\fldinst{HYPERLINK "https://elshad-karimov.medium.com/building-a-simple-rule-based-expert-system-in-python-df606403472e#:~:text=An%20expert%20system%20emulates%20the,It%20has"}}{\fldrslt{\ul\cf4\cf4\ul [4]}}}}{\cf3\f5\fs24{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/2026071/neural-network-expert-system#:~:text=These%20are%20quite%20incompatible%20topics"}}{\fldrslt{\ul\cf4\cf4\ul [5]}}}}\cf0\ulnone\f5\fs24 . The Python tutorial also notes that the interpreter will execute a script file when invoked with its filename{\cf3{\field{\*\fldinst{HYPERLINK "https://docs.python.org/3/tutorial/interpreter.html#:~:text=The%20interpreter%20operates%20somewhat%20like,a%20script%20from%20that%20file"}}{\fldrslt{\ul\cf4\cf4\ul [2]}}}}\f5\fs24 . The user-interface guidance comes from general AI texts noting that an expert system\f7\rquote\f5 s UI should be simple and user-friendly{\cf3{\field{\*\fldinst{HYPERLINK "https://www.geeksforgeeks.org/artificial-intelligence/expert-systems/#:~:text=3,Between%20System%20and%20User"}}{\fldrslt{\ul\cf4\cf4\ul [3]}}}}\f5\fs24 . The inference algorithm mirrors the typical pattern: gather user inputs (facts), check rules, fire matched rules, and repeat until a conclusion is reached{\cf3{\field{\*\fldinst{HYPERLINK "https://www.academia.edu/82497603/Laserjet_Printer_Troubleshooting_Expert_System#:~:text=the%20next%20facts%20and%20update,African%20Journal%20of%20Industrial"}}{\fldrslt{\ul\cf4\cf4\ul [6]}}}}{\cf3\f5\fs24{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/2026071/neural-network-expert-system#:~:text=These%20are%20quite%20incompatible%20topics"}}{\fldrslt{\ul\cf4\cf4\ul [5]}}}}\cf0\ulnone\f5\fs24 .\par
+
+\pard\ltrpar\sa200\par
+
+\pard\ltrpar\sb180\sa180 {\cf3{\field{\*\fldinst{HYPERLINK "https://elshad-karimov.medium.com/building-a-simple-rule-based-expert-system-in-python-df606403472e#:~:text=Before%20neural%20networks%2C%20transformers%2C%20and,Based%20Expert%20Systems"}}{\fldrslt{\ul\cf4\cf4\ul [1]}}}}\f5\fs24  {\cf3{\field{\*\fldinst{HYPERLINK "https://elshad-karimov.medium.com/building-a-simple-rule-based-expert-system-in-python-df606403472e#:~:text=An%20expert%20system%20emulates%20the,It%20has"}}{\fldrslt{\ul\cf4\cf4\ul [4]}}}}\f5\fs24   Building a Simple Rule-Based Expert System in Python | by Elshad Karimov | Medium\par
+{{\field{\*\fldinst{HYPERLINK https://elshad-karimov.medium.com/building-a-simple-rule-based-expert-system-in-python-df606403472e }}{\fldrslt{https://elshad-karimov.medium.com/building-a-simple-rule-based-expert-system-in-python-df606403472e\ul0\cf0}}}}\f5\fs24\par
+{\cf3{\field{\*\fldinst{HYPERLINK "https://docs.python.org/3/tutorial/interpreter.html#:~:text=The%20interpreter%20operates%20somewhat%20like,a%20script%20from%20that%20file"}}{\fldrslt{\ul\cf4\cf4\ul [2]}}}}\f5\fs24  2. Using the Python Interpreter \f10\emdash\f7  \f5 Python 3.13.7 documentation\par
+{{\field{\*\fldinst{HYPERLINK https://docs.python.org/3/tutorial/interpreter.html }}{\fldrslt{https://docs.python.org/3/tutorial/interpreter.html\ul0\cf0}}}}\f5\fs24\par
+{\cf3{\field{\*\fldinst{HYPERLINK "https://www.geeksforgeeks.org/artificial-intelligence/expert-systems/#:~:text=3,Between%20System%20and%20User"}}{\fldrslt{\ul\cf4\cf4\ul [3]}}}}\f5\fs24  Expert Systems in AI - GeeksforGeeks\par
+{{\field{\*\fldinst{HYPERLINK https://www.geeksforgeeks.org/artificial-intelligence/expert-systems/ }}{\fldrslt{https://www.geeksforgeeks.org/artificial-intelligence/expert-systems/\ul0\cf0}}}}\f5\fs24\par
+{\cf3{\field{\*\fldinst{HYPERLINK "https://stackoverflow.com/questions/2026071/neural-network-expert-system#:~:text=These%20are%20quite%20incompatible%20topics"}}{\fldrslt{\ul\cf4\cf4\ul [5]}}}}\f5\fs24  architecture - Neural Network Expert System - Stack Overflow\par
+{{\field{\*\fldinst{HYPERLINK https://stackoverflow.com/questions/2026071/neural-network-expert-system }}{\fldrslt{https://stackoverflow.com/questions/2026071/neural-network-expert-system\ul0\cf0}}}}\f5\fs24\par
+{\cf3{\field{\*\fldinst{HYPERLINK "https://www.academia.edu/82497603/Laserjet_Printer_Troubleshooting_Expert_System#:~:text=the%20next%20facts%20and%20update,African%20Journal%20of%20Industrial"}}{\fldrslt{\ul\cf4\cf4\ul [6]}}}}\f5\fs24  (PDF) Laserjet Printer Troubleshooting Expert System\par
+{{\field{\*\fldinst{HYPERLINK https://www.academia.edu/82497603/Laserjet_Printer_Troubleshooting_Expert_System }}{\fldrslt{https://www.academia.edu/82497603/Laserjet_Printer_Troubleshooting_Expert_System\ul0\cf0}}}}\f5\fs24\par
+}
+ 
