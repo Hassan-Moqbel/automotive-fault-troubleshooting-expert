@@ -59,21 +59,6 @@ If the set of user-selected symptoms is a superset of the rule's required sympto
 
 The time complexity of the forward-chaining evaluation is bounded by $\mathcal{O}(R \times S)$, where $R$ is the total number of rules in the knowledge base and $S$ is the number of active user symptoms. Because automotive rules are highly structured, the evaluation is practically instantaneous: $\mathcal{O}(1)$.
 
-## Propositional Logic & Inference
-The expert system operates on classical propositional logic using **Modus Ponens**. Given a rule $P \to Q$(If$P$then$Q$), and the assertion of premise$P$, the system deduces$Q$.
-$$ P \land (P \to Q) \vdash Q $$
-
-In the forward-chaining algorithm, the premise $P$is a logical conjunction ($\bigwedge$) of specific symptoms$S_i$required by a diagnostic rule$D_k$:
-$$ \left( \bigwedge_{i=1}^{n} S_i \right) \implies D_k $$
-If the set of user-selected symptoms is a superset of the rule's required symptoms, the rule fires. 
-
-### Algorithmic Complexity
-The time complexity of the forward-chaining evaluation is bounded by $\mathcal{O}(R \times S)$, where$R$is the total number of rules in the knowledge base and$S$is the number of active user symptoms. Because automotive rules are highly structured, the evaluation is practically instantaneous$\mathcal{O}(1)$.
-
-## System Requirements & Prerequisites
-- **Python 3.8+** (No external libraries required for the source script).
-- Operating System: Windows 10/11, macOS, or Linux (requires standard Tcl/Tk system libraries).
-
 ## Repository Layout Tree
 ```text
 .
