@@ -20,22 +20,22 @@ Automotive troubleshooting often requires navigating a complex matrix of interre
 
 ## System Architecture & Diagnostic Decision Tree
 
-```mermaid
+mermaid
 flowchart TD
-    UI[User Interface / Checkboxes] -->|Selects Symptoms| FCE[Forward-Chaining Inference Engine]
+    UI["User Interface / Checkboxes"] -->|Selects Symptoms| FCE["Forward-Chaining Inference Engine"]
     
-    KB[(Knowledge Base / Rule Matrix)] -->|Provides Rules| FCE
+    KB["(Knowledge Base / Rule Matrix)"] -->|Provides Rules| FCE
     
-    FCE -->|Rule Match: No crank + Click| D1[Diagnosis: Dead Battery / Starter Relay]
-    FCE -->|Rule Match: Sputter + Crank| D2[Diagnosis: Fuel Delivery Failure]
-    FCE -->|Rule Match: Steam + Overheat| D3[Diagnosis: Coolant Leak / Head Gasket]
-    FCE -->|Rule Match: Battery Drain| D4[Diagnosis: Parasitic Electrical Draw]
+    FCE -->|Rule Match: No crank + Click| D1["Diagnosis: Dead Battery / Starter Relay"]
+    FCE -->|Rule Match: Sputter + Crank| D2["Diagnosis: Fuel Delivery Failure"]
+    FCE -->|Rule Match: Steam + Overheat| D3["Diagnosis: Coolant Leak / Head Gasket"]
+    FCE -->|Rule Match: Battery Drain| D4["Diagnosis: Parasitic Electrical Draw"]
     
-    D1 --> REC[Recommend Corrective Action]
+    D1 --> REC["Recommend Corrective Action"]
     D2 --> REC
     D3 --> REC
     D4 --> REC
-```
+
 
 ## Theoretical & Mathematical Model
 
@@ -44,11 +44,11 @@ The expert system operates on classical propositional logic using **Modus Ponens
 $$ P \land (P \to Q) \vdash Q $$
 
 In the forward-chaining algorithm, the premise $P$ is a logical conjunction ($\bigwedge$) of specific symptoms $S_i$ required by a diagnostic rule $D_k$:
-$$ \left( \bigwedge_{i=1}^{n} S_i \right) \implies D_k $$
+$$ \left( \bigwedge_{"i=1"}^{n} S_i \right) \implies D_k $$
 If the set of user-selected symptoms is a superset of the rule's required symptoms, the rule fires. 
 
 ### Algorithmic Complexity
-The time complexity of the forward-chaining evaluation is bounded by $\mathcal{O}(R \times S)$, where $R$ is the total number of rules in the knowledge base and $S$ is the number of active user symptoms. Because automotive rules are highly structured, the evaluation is practically instantaneous $\mathcal{O}(1)$.
+The time complexity of the forward-chaining evaluation is bounded by $\mathcal{"O"}(R \times S)$, where $R$ is the total number of rules in the knowledge base and $S$ is the number of active user symptoms. Because automotive rules are highly structured, the evaluation is practically instantaneous $\mathcal{"O"}(1)$.
 
 ## System Requirements & Prerequisites
 - **Python 3.8+** (No external libraries required for the source script).
@@ -96,4 +96,4 @@ Mechatronics Engineer | Mechanical Design & CAD (SolidWorks & AutoCAD) | Prevent
 [GitHub](https://github.com/Hassan-Moqbel) · [Facebook](https://www.facebook.com/share/1BqxAgVjHi/) · [LinkedIn](https://www.linkedin.com/in/hassan-moqbel)
 
 ## License
-This project is licensed under the [MIT License](LICENSE).
+This project is licensed under the ["MIT License"](LICENSE).
